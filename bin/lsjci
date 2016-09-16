@@ -10,7 +10,7 @@ if [ ! -f $Java ] ; then
     exit 1
 fi
 
-JavaVer=$($Java -version 2>&1 | grep '^java version' | awk -F'"' '{print $2}')
+JavaVer=$($Java -version 2>&1 | head -1 | awk -F'"' '{print $2}')
 JavaVerOk=$(echo $JavaVer | egrep '^1.[89]|^1.[1-9][0-9]' >/dev/null && echo 1 || echo 0)
 if (( $JavaVerOk == 0 )) ; then
     echo ""

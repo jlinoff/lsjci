@@ -414,7 +414,7 @@ class ListClassInfo {
                     case "-version": // java standard
                     case "--version":
                         Class cls = MethodHandles.lookup().lookupClass().getEnclosingClass();
-                        System.out.println(cls.getName() + " v0.2.0");
+                        System.out.println(cls.getName() + " v0.2.1");
                         System.exit(0);
                         break;
                     default:
