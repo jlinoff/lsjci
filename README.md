@@ -5,6 +5,8 @@ Lsjci stands for list java class info. It is a wrapper script that runs a java c
 
 This tool is similar to javap but has a different output format that i find more useful. For example it sorts the variable and method names and provides a simple to read prefix.
 
+I have tested in on Mac OS X 10.11.6 using java-1.8.0_102 and on CentOS 7.2 using openjdk-1.8.0.101-3. It will not work with versions of java older than 1.8.
+
 ## Download and Use
 You can use the tool immediately. Here is how you download and run it.
 ```bash
