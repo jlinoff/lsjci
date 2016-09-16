@@ -5,8 +5,8 @@ Lsjci stands for list java class info. It is a wrapper script that runs a java c
 
 This tool is similar to javap but has a different output format that i find more useful. For example it sorts the variable and method names and provides a simple to read prefix.
 
-## Download and use.
-Here is how you download and run it.
+## Download and Use
+You can use the tool immediately. Here is how you download and run it.
 ```bash
 $ git clone https://github.com/jlinoff/lsjci.git
 $ lsjci/bin/lsjci -version          # get the version number
@@ -16,6 +16,25 @@ $ lsjci/bin/lsjci -cp /foo/bar/spam.jar foo.bar.spam.Spam  # report information 
 ```
 
 Information about the available options for filtering or pruning can be found by specifying the -help option.
+
+## Building
+If you want to build the tool, there is a Makefile. You can also incorporate the source into your favorite IDE. I used IntelliJ and it works well.
+
+Here is how you would build it from scratch.
+```bash
+$ git clone https://github.com/jlinoff/lsjci.git
+$ cd lsjci
+$ make clean    # remove the current build artifacts
+$ make          # create the bin directory with lsjci and jsjci.jar
+$ make help     # test
+$ make version  # test
+$ make test     # test
+$ make testp    # test
+```
+
+NOTE: you must have java8 installed.
+
+If java8 is installed but it is not the default you will have to edit the Makefile and src/lsjci.sh file to fix the references.
 
 ## Simple Example (java.lang.String)
 Here is a simple example:
