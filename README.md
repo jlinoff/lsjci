@@ -36,7 +36,7 @@ $ make testp    # test
 
 NOTE: you must have java8 installed.
 
-If java8 is installed but it is not the default you will have to edit the Makefile and src/lsjci.sh file to fix the references.
+If java8 is installed but it is not the default, you will have to edit the Makefile and src/lsjci.sh file to fix the references.
 
 ## Simple Example (java.lang.String)
 Here is a simple example:
